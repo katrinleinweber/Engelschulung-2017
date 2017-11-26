@@ -1,23 +1,22 @@
+% Engelschulung 34c3
 % geerbt von einem Tutorial, diverse Syntax ist noch drin damit Benjamin daran LatTX lernt
 
 \documentclass[hyperref={pdfpagelabels=false}]{beamer}
 \setbeamertemplate{navigation symbols}{}    % macht hässlich weg
 \setbeamertemplate{itemize item}{$\bullet$} % macht anderes hässlich weg
 \usepackage{lmodern}
+\usepackage[utf8]{inputenc}
 
 \title{AV Engelschulung}    % Benjamin findet das Wort gehört zur Folklore und ist erfrischend  nicht-polished
 \author{Benjamin Wand, Sophie Schiller}  % pivot, wie willst du heißen?
 \date{\today} 
 
 \begin{document}
-
-
 \begin{frame}
 \titlepage
 \end{frame} 
 % "Welcome to the audio/video-introduction! <Leute Vorstellen> 
-% Who of you is new to this? Even if have attended audio-video-introductions before, stay tuned
-% , some tings will be different than last year."
+% Who of you is new to this? Even if have attended audio-video-introductions before, stay tuned, some tings will be different than last year."
 
 \begin{frame}
 \frametitle{Inhaltsverzeichnis}   % glaub nicht dass wir das brauchen, place holder
@@ -25,36 +24,48 @@
 \end{frame} 
 
 
-\section{Abschnitt Nr.1} 
+\section{Equipment} 
+\subsection{Kameras}
 \begin{frame}
-\frametitle{Titel} 
-Die einzelnen Frames sollte einen Titel haben 
-\end{frame}
-\subsection{Unterabschnitt Nr.1.1  }
-\begin{frame} 
-Denn ohne Titel fehlt ihnen was
-\end{frame}
-
-
-\section{Abschnitt Nr. 2} 
-\subsection{Listen I}
-\begin{frame}
-\frametitle{Aufz\"ahlung}
 \begin{itemize}
-\item Einf\"uhrungskurs in \LaTeX{}  
-\item Kurs 2  
-\item Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
-\item Die Beamerclass 
+\item Content über Kameras
+\end{itemize}
+\end{frame}
+
+\subsection{VoctoGUI}
+\begin{frame} 
+\begin{itemize}
+\item Content über VoctoGUI 
+\item vielleicht auch Content über Voctoknopf
+\end{itemize}
+\end{frame}
+
+
+\section{Timeline of a talk} 
+\subsection{before}
+\begin{frame}
+\begin{itemize}[<+->]
+\item check in with angels % meet at the mixeer desk, is everybody there? if yes camera angels go to cameras and everybody starts using intercom, if not camm heaven für replacement  
+\item check hardware % do the cameras and mixer desl work as expected? if something is wrong get help from AV-tecnician  
+\item evaluate skill level and vocabulary % the mixer angel has to figure out how good the camera angels can film, talk to each other and make sure everybody understands the same words.  
+\item [(* ] mixer angel checks slides) % if you still have time and if the speaker looks like they have camacity for it, the mixer angel takes a look at the slides to figure out whether or not to use picture-in-picture or superscource in this talk
 \end{itemize} 
 \end{frame}
 
 \begin{frame}
-\frametitle{Aufz\"ahlung mit einzelnen Pausen}
+\subsection{during}
 \begin{itemize}
-\item  Einf\"uhrungskurs in \LaTeX{} \pause 
-\item  Kurs 2 \pause 
-\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} \pause 
-\item  Die Beamerclass
+\item  bla 
+\item  bla 
+\item  bla 
+\item  bla
+\end{itemize} 
+\end{frame}
+
+\begin{frame}
+\subsection{after}
+\begin{itemize}
+\item thank each other, for further feedback you might meet at the mixer desk
 \end{itemize} 
 \end{frame}
 
@@ -68,61 +79,12 @@ Denn ohne Titel fehlt ihnen was
 \frametitle{Quality}
 \begin{itemize}[<+->]
 \item  practice at VOC-Lounge % go to the VOC-Lounge and practice with Frederick  
-\item  feedback from peers % feedback with peers do it with a friend, one is doing the editing and the other the stream observing and afterwards you talk how it went
-\item  feedback from Capo % you can get fedback from Capo, his day only has 24 hour like everybdys day but for some of you this could work
-\item  watch your own edits (after the event) % watch your own edits after the event, at least a bit, so you have an idea how you performed
-\item  do it more than once a year -> https://c3voc.de/wiki/ % do it more than once a year! You can check out in the VOC-Wiki where other events ate where the VOC is doing video, if you do it more often you won't forget it until next congress
+\item  get feedback from peers % feedback with peers do it with a friend, one is doing the editing and the other the stream observing and afterwards you talk how it went
+\item  get feedback from Capo % you can get fedback from Capo, his day only has 24 hour like everybdys day but for some of you this could work
+\item  watch your own edits (post event) % watch your own edits after the event, at least a bit, so you have an idea how you performed
+\item  do it more than once a year, check c3voc.de/wiki % do it more than once a year! You can check out in the VOC-Wiki where other events ate where the VOC is doing video, if you do it more often you won't forget it until next congress
 \item  have a habit of continuous improvement % have a habit of continuous improvement. if you think you know how it works, you are probably part of the problem. please, everybody should strive to get better, there is always something to improve.
 \end{itemize} 
-\end{frame}
-
-
-\subsection{Listen II}
-\begin{frame}
-\frametitle{Numerierte Liste}
-\begin{enumerate}
-\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
-\item  Die Beamerclass
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-\frametitle{Numerierte Liste}
-\begin{enumerate}
-\item  Kurs 2
-\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
-\item  Die Beamerclass
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-\frametitle{Numerierte Liste}
-\begin{enumerate}
-\item  Einf\"uhrungskurs in \LaTeX{} 
-\item  Kurs 2
-\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
-\item  Die Beamerclass
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-\frametitle{Numerierte Liste mit einzelnen Pausen}
-\begin{enumerate}
-\item  Einf\"uhrungskurs in \LaTeX{} \pause 
-\item  Kurs 2 \pause 
-\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} \pause 
-\item  Die Beamerclass
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-\frametitle{Numerierte Liste mit  Pausen}
-\begin{enumerate}[<+->]
-\item  Einf\"uhrungskurs in \LaTeX{} 
-\item  Kurs 2 
-\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
-\item  Die Beamerclass
-\end{enumerate}
 \end{frame}
 
 \section{Abschnitt Nr.3} 
