@@ -1,0 +1,174 @@
+% geerbt von einem Tutorial, diverse Syntax ist noch drin damit Benjamin daran LatTX lernt
+
+\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+\setbeamertemplate{navigation symbols}{}    % macht hässlich weg
+\setbeamertemplate{itemize item}{$\bullet$} % macht anderes hässlich weg
+\usepackage{lmodern}
+
+\title{AV Engelschulung}    % Benjamin findet das Wort gehört zur Folklore und ist erfrischend  nicht-polished
+\author{Benjamin Wand, Sophie Schiller}  % pivot, wie willst du heißen?
+\date{\today} 
+
+\begin{document}
+
+
+\begin{frame}
+\titlepage
+\end{frame} 
+% "Welcome to the audio/video-introduction! <Leute Vorstellen> 
+% Who of you is new to this? Even if have attended audio-video-introductions before, stay tuned
+% , some tings will be different than last year."
+
+\begin{frame}
+\frametitle{Inhaltsverzeichnis}   % glaub nicht dass wir das brauchen, place holder
+\tableofcontents
+\end{frame} 
+
+
+\section{Abschnitt Nr.1} 
+\begin{frame}
+\frametitle{Titel} 
+Die einzelnen Frames sollte einen Titel haben 
+\end{frame}
+\subsection{Unterabschnitt Nr.1.1  }
+\begin{frame} 
+Denn ohne Titel fehlt ihnen was
+\end{frame}
+
+
+\section{Abschnitt Nr. 2} 
+\subsection{Listen I}
+\begin{frame}
+\frametitle{Aufz\"ahlung}
+\begin{itemize}
+\item Einf\"uhrungskurs in \LaTeX{}  
+\item Kurs 2  
+\item Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
+\item Die Beamerclass 
+\end{itemize} 
+\end{frame}
+
+\begin{frame}
+\frametitle{Aufz\"ahlung mit einzelnen Pausen}
+\begin{itemize}
+\item  Einf\"uhrungskurs in \LaTeX{} \pause 
+\item  Kurs 2 \pause 
+\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} \pause 
+\item  Die Beamerclass
+\end{itemize} 
+\end{frame}
+
+\begin{frame}
+\end{frame}
+% <Benjamin> And then there is the thing with the quality. In the past years the quality of the recordings we produce got better but so got the expectations. We still have this problems that not all angels deliver the quality that the VOC would like to see. Now, we’ve already talked in “timeline of a talk” about what things we’d like to see, but … <points to empty slides> oops, what is that? An empty slide? I actually once had a talk where the speaker had the peculiar style of having white slides when she would speak and there was nothing visual to show. Which now I find quite obvious. You listen to my voice now, at least there is nothing in the screen, if it was in a dark theatre, seeing and hearing me would be the only source of information and you would certainly perceive me well. But as a mixer angel I was conditioned to always go on the slides when a new slide appears so my conditioning to always show the slide immediately was in the way. Suddenly I was the problem. What I’m trying to say here is that how talks get hard to edit well comes unexpectedly, all sorts of things can be odd and often human factor is a thing. Therefore it is impossible to explain in detail what would be good life video edit. Ultimately, learning is a thing that you have to do yourself. So here are a bunch of things that you can do
+
+% <dont care who speaks this>
+\section{Quality} 
+\begin{frame}
+\frametitle{Quality}
+\begin{itemize}[<+->]
+\item  practice at VOC-Lounge % go to the VOC-Lounge and practice with Frederick  
+\item  feedback from peers % feedback with peers do it with a friend, one is doing the editing and the other the stream observing and afterwards you talk how it went
+\item  feedback from Capo % you can get fedback from Capo, his day only has 24 hour like everybdys day but for some of you this could work
+\item  watch your own edits (after the event) % watch your own edits after the event, at least a bit, so you have an idea how you performed
+\item  do it more than once a year -> https://c3voc.de/wiki/ % do it more than once a year! You can check out in the VOC-Wiki where other events ate where the VOC is doing video, if you do it more often you won't forget it until next congress
+\item  have a habit of continuous improvement % have a habit of continuous improvement. if you think you know how it works, you are probably part of the problem. please, everybody should strive to get better, there is always something to improve.
+\end{itemize} 
+\end{frame}
+
+
+\subsection{Listen II}
+\begin{frame}
+\frametitle{Numerierte Liste}
+\begin{enumerate}
+\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
+\item  Die Beamerclass
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Numerierte Liste}
+\begin{enumerate}
+\item  Kurs 2
+\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
+\item  Die Beamerclass
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Numerierte Liste}
+\begin{enumerate}
+\item  Einf\"uhrungskurs in \LaTeX{} 
+\item  Kurs 2
+\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
+\item  Die Beamerclass
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Numerierte Liste mit einzelnen Pausen}
+\begin{enumerate}
+\item  Einf\"uhrungskurs in \LaTeX{} \pause 
+\item  Kurs 2 \pause 
+\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} \pause 
+\item  Die Beamerclass
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Numerierte Liste mit  Pausen}
+\begin{enumerate}[<+->]
+\item  Einf\"uhrungskurs in \LaTeX{} 
+\item  Kurs 2 
+\item  Seminararbeiten und Pr\"asentationen mit \LaTeX{} 
+\item  Die Beamerclass
+\end{enumerate}
+\end{frame}
+
+\section{Abschnitt Nr.3} 
+\subsection{Tabellen}
+\begin{frame}
+\frametitle{Tabellen}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Zeitpunkt} & \textbf{Kursleiter} & \textbf{Titel} \\
+\hline
+WS 04/05 & Sascha Frank &  Erste Schritte mit \LaTeX{}  \\
+\hline
+SS 05 & Sascha Frank & \LaTeX{} Kursreihe \\
+\hline
+\end{tabular}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Tabellen mit Pause}
+\begin{tabular}{c c c}
+A & B & C \\ 
+\pause 
+1 & 2 & 3 \\  
+\pause 
+A & B & C \\ 
+\end{tabular} 
+\end{frame}
+
+
+\section{Abschnitt Nr. 4}
+\subsection{Bl\"ocke}
+\begin{frame}
+\frametitle{Bl\"ocke}
+
+\begin{block}{Blocktitel}
+Blocktext 
+\end{block}
+
+\begin{exampleblock}{Blocktitel}
+Blocktext 
+\end{exampleblock}
+
+
+\begin{alertblock}{Blocktitel}
+Blocktext 
+\end{alertblock}
+\end{frame}
+\end{document}
