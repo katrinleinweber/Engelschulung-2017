@@ -1,16 +1,14 @@
 % Engelschulung 34c3
 % Design-Merkmal: kann sein wir haben gar keine Slides beim Vortrag weil die Saal-Technik zickt
 
-% geerbt von einem Tutorial, am Ende ist noch Syntax für Benjamin zum LatTX lernen drin
-
 \documentclass[hyperref={pdfpagelabels=false}]{beamer}
 \setbeamertemplate{navigation symbols}{}    % macht hässlich weg
 \setbeamertemplate{itemize item}{$\bullet$} % macht anderes hässlich weg
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
 
-\title{AV Engelschulung}    % Benjamin findet das Wort gehört zur Folklore und ist erfrischend  nicht-polished
-\author{Benjamin Wand, Sophie Schiller}  % pivot, wie willst du heißen?
+\title{Engelschulung}    % Benjamin findet das Wort gehört zur Folklore und ist erfrischend  nicht-polished
+\author{Benjamin Wand, Sophie Schiller}  
 \date{\today} 
 
 \begin{document}
@@ -20,32 +18,88 @@
 % "Welcome to the audio/video-introduction! <Leute Vorstellen> 
 % Who of you is new to this? Even if have attended audio-video-introductions before, stay tuned, some tings will be different than last year."
 
-\begin{frame}
-\frametitle{Inhaltsverzeichnis}   % glaub nicht dass wir das brauchen, place holder
+\begin{frame}{Topics}  % glaub nicht dass wir das brauchen, place holder
 \tableofcontents
 \end{frame} 
 
-
-\section{Equipment} 
-\subsection{Kameras}
-\begin{frame}
-\begin{itemize}
-\item Content über Kameras
-\end{itemize}
+\section{Toys}  % Sophie
+\subsection{Cameras}
+\begin{frame}{Cameras}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.5\textwidth}
+	\begin{figure} 
+		\centering
+		\def\svgwidth{0.9\textwidth}
+		\input{camera-controls.pdf_tex}
+	\end{figure}
+	\column{0.5\textwidth}
+	Cameras are in manual mode because of difficult lighting situation.
+	\begin{description}
+		\item[Left Ring] Focus - control sharpness of the image.
+		\item[Middle Ring] Zoom - vary the focal length.
+		\item[Right Ring] Iris - don't touch.
+     \end{description}
+\end{columns}
 \end{frame}
 
-\subsection{VoctoGUI}
-\begin{frame} 
-\begin{itemize}
-\item Content über VoctoGUI 
-\item vielleicht auch Content über Voctoknopf
-\end{itemize}
+\begin{frame}{Tripod Handle Controls}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.5\textwidth}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{tripod-handle.jpeg}
+	\end{figure}
+
+	\column{0.5\textwidth}
+	Beware: various models in use.
+	\begin{description}
+		\item[Zoom Control] lever above red ring
+		\item[Red Button] Start/stop recording, don't touch
+		\item[Other Buttons] markings on the handle
+    \end{description}
+	\end{columns}
 \end{frame}
 
+\begin{frame}{Tripod}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.4\textwidth}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.9\textwidth]{tripod-complete.png}
+	\end{figure}
+	
+	\column{0.6\textwidth}
+	\begin{itemize}
+			\item Variable brakes - can be adjusted to your needs.
+			\item Tilt axis should be balanced, so that the camera doesn't tilt up or down on its own.
+			\item Pan axis is needed all of the time. Adjust it well so you can do smooth pans all over the stage.
+			\item Alert the A/V-Technician if something's wrong or misplaced.
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+
+\subsection{Voctomix} % Sophie
+\begin{frame}{Voctomix}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=1\textwidth]{voctomix.png}
+	\end{figure}
+\end{frame}
+
+
+\subsection{Stream-Observer-Software} %Frederick
+\begin{frame}{Stream-Observer-Software}
+\begin{itemize}
+\item Sie Stream Observer App 
+\item ist ganz toll und wird von Frederik vorgestellt
+\end{itemize}
+\end{frame}
 
 \section{Timeline of a talk} 
 \subsection{before}
 \begin{frame}
+\frametitle{Timeline}
 \begin{itemize}[<+->]
 \item check in with angels % meet at the mixeer desk, is everybody there? if yes camera angels go to cameras and everybody starts using intercom, if not camm heaven für replacement  
 \item check hardware % do the cameras and mixer desl work as expected? if something is wrong get help from AV-tecnician  
@@ -55,18 +109,24 @@
 \end{itemize} 
 \end{frame}
 
-\begin{frame}
+
 \subsection{during}
+\begin{frame}
+\frametitle{Timeline}
 \begin{itemize}
-\item  bla 
-\item  bla 
-\item  bla 
-\item  bla
+\item  kameras zeigen unterschiedliche bilder 
+\item  kamera-einstellungen zum ersten
+\item  kamera-einstellungen zum zweiten
+\item  kamera-einstellungen zum dritten
+\item  nicht das publikum filmen
+\item  dies ist ein Vortrag, kein Action-Film 
+\item  blub--blub
 \end{itemize} 
 \end{frame}
 
-\begin{frame}
 \subsection{after}
+\begin{frame}
+\frametitle{Timeline}
 \begin{itemize}
 \item thank each other, for further feedback you might meet at the mixer desk
 \end{itemize} 
@@ -76,64 +136,17 @@
 \end{frame}
 % <Benjamin> And then there is the thing with the quality. In the past years the quality of the recordings we produce got better but so got the expectations. We still have this problems that not all angels deliver the quality that the VOC would like to see. Now, we’ve already talked in “timeline of a talk” about what things we’d like to see, but … <points to empty slides> oops, what is that? An empty slide? I actually once had a talk where the speaker had the peculiar style of having white slides when she would speak and there was nothing visual to show. Which now I find quite obvious. You listen to my voice now, at least there is nothing in the screen, if it was in a dark theatre, seeing and hearing me would be the only source of information and you would certainly perceive me well. But as a mixer angel I was conditioned to always go on the slides when a new slide appears so my conditioning to always show the slide immediately was in the way. Suddenly I was the problem. What I’m trying to say here is that how talks get hard to edit well comes unexpectedly, all sorts of things can be odd and often human factor is a thing. Therefore it is impossible to explain in detail what would be good life video edit. Ultimately, learning is a thing that you have to do yourself. So here are a bunch of things that you can do
 
-% <dont care who speaks this>
+
 \section{Quality} 
-\begin{frame}
-\frametitle{Quality}
+\begin{frame}{Quality}
 \begin{itemize}[<+->]
-\item  practice at VOC-Lounge % go to the VOC-Lounge and practice with Frederick  
+\item  hands-on training with Frederik and Allan % go to the xyz and practice with Frederick  
 \item  get feedback from peers % feedback with peers do it with a friend, one is doing the editing and the other the stream observing and afterwards you talk how it went
-\item  get feedback from Capo % you can get fedback from Capo, his day only has 24 hour like everybdys day but for some of you this could work
+\item  get feedback from Capo % [macht Capo selber]
 \item  watch your own edits (post event) % watch your own edits after the event, at least a bit, so you have an idea how you performed
 \item  do it more than once a year, check c3voc.de/wiki % do it more than once a year! You can check out in the VOC-Wiki where other events ate where the VOC is doing video, if you do it more often you won't forget it until next congress
 \item  have a habit of continuous improvement % have a habit of continuous improvement. if you think you know how it works, you are probably part of the problem. please, everybody should strive to get better, there is always something to improve.
 \end{itemize} 
 \end{frame}
 
-\section{Abschnitt Nr.3} 
-\subsection{Tabellen}
-\begin{frame}
-\frametitle{Tabellen}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Zeitpunkt} & \textbf{Kursleiter} & \textbf{Titel} \\
-\hline
-WS 04/05 & Sascha Frank &  Erste Schritte mit \LaTeX{}  \\
-\hline
-SS 05 & Sascha Frank & \LaTeX{} Kursreihe \\
-\hline
-\end{tabular}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Tabellen mit Pause}
-\begin{tabular}{c c c}
-A & B & C \\ 
-\pause 
-1 & 2 & 3 \\  
-\pause 
-A & B & C \\ 
-\end{tabular} 
-\end{frame}
-
-
-\section{Abschnitt Nr. 4}
-\subsection{Bl\"ocke}
-\begin{frame}
-\frametitle{Bl\"ocke}
-
-\begin{block}{Blocktitel}
-Blocktext 
-\end{block}
-
-\begin{exampleblock}{Blocktitel}
-Blocktext 
-\end{exampleblock}
-
-
-\begin{alertblock}{Blocktitel}
-Blocktext 
-\end{alertblock}
-\end{frame}
 \end{document}
