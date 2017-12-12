@@ -1,35 +1,39 @@
 % Engelschulung 34c3
-% Design-Merkmal: kann sein wir haben gar keine Slides beim Vortrag weil die Saal-Technik zickt
+
+% kann sein wir haben gar keine Slides beim Vortrag weil die Saal-Technik zickt
+
+% unterschiedliche Coding-Stile wegen unterschiedlicher Autoren
 
 \documentclass[hyperref={pdfpagelabels=false}]{beamer}
 \setbeamertemplate{navigation symbols}{}    % macht hässlich weg
-\setbeamertemplate{itemize item}{$\bullet$} % macht anderes hässlich weg
+\setbeamertemplate{itemize item}{$\bullet$}  % macht anderes hässlich weg
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
 
 \title{Engelschulung}    % Benjamin findet das Wort gehört zur Folklore und ist erfrischend  nicht-polished
-\author{Benjamin Wand, Sophie Schiller}  
+\author{Benjamin Wand, Sophie Schiller, and others}   % wer will noch persönlich genannt werden?
 \date{\today} 
 
-\begin{document}
+\begin{document} % vor dem Vortrag/Test ob Beamer geht
 \begin{frame}
 \titlepage
+\end{frame} 
+
+
+\begin{frame}  
+\tableofcontents
 \end{frame} 
 % "Welcome to the audio/video-introduction! <Leute Vorstellen> 
 % Who of you is new to this? Even if have attended audio-video-introductions before, stay tuned, some tings will be different than last year."
 
-\begin{frame}{Topics}  % glaub nicht dass wir das brauchen, place holder
-\tableofcontents
-\end{frame} 
-
-\section{Toys}  % Sophie
+\section{Gear}  % Sophie
 \subsection{Cameras}
 \begin{frame}{Cameras}
 	\begin{columns}[T,onlytextwidth]
 	\column{0.4\textwidth}
 	\begin{figure} 
 		\centering
-		\def\svgwidth{0.9\textwidth}
+		\def\svgwidth{1\textwidth}
 		\input{camera-controls.pdf_tex}
 	\end{figure}
 	\column{0.6\textwidth}
@@ -100,11 +104,11 @@
 \subsection{Before}
 \begin{frame}
 \frametitle{Timeline}
-\begin{itemize}[<+->]
+\begin{itemize} %[<+->] später wieder einfliegend machen
 \item check in with angels % meet at the mixeer desk, is everybody there? if yes camera angels go to cameras and everybody starts using intercom, if not camm heaven für replacement  
 \item check hardware % do the cameras and mixer desl work as expected? if something is wrong get help from AV-tecnician  
 \item evaluate skill level and vocabulary % the mixer angel has to figure out how good the camera angels can film, talk to each other and make sure everybody understands the same words.  
-\item [($\bullet$ ] mixer angel checks slides) % if you still have time and if the speaker looks like they have capacity for it, the mixer angel takes a look at the slides to figure out whether or not to use picture-in-picture or superscource in this talk.
+\item [($\bullet$] mixer angel checks slides) % if you still have time and if the speaker looks like they have capacity for it, the mixer angel takes a look at the slides to figure out whether or not to use picture-in-picture or superscource in this talk.
 % I would recommend to NOT ask the speaker where they walk around on stage. Usually they don't give a useful answer and if they do they are highly professional and easy to film anyway. The speakers have to focus on the content and their way of speaking, where they walk around on stage is a minor issue. If you want to estimate how a speaker will behave on stage, check them out on youtube.
 \end{itemize} 
 \end{frame}
@@ -123,13 +127,12 @@
 \end{itemize} 
 \end{frame}
 
-\subsection{Stream observing angels} % Frederik
+\subsection{(Stream observing angels)} % Frederik
 \begin{frame}{Stream observing angels}
 \begin{itemize}
-\item  derweil wo anders ...
-\item  die Sream observing angels
-\item  schreiben auf was alles schief lief
-\item  dann können wir am nächsten tag feedback runde machen
+\item  kann sein es reicht wen wir das
+\item  zusammen mit der software erklären
+\item  placeholder
 \end{itemize} 
 \end{frame}
 
@@ -141,20 +144,22 @@
 \end{itemize} 
 \end{frame}
 
+\section{Quality} 
+\subsection{How to make shit great again} 
 \begin{frame}
 \end{frame}
-% <Benjamin> And then there is the thing with the quality. In the past years the quality of the recordings we produce got better but so got the expectations. We still have this problems that not all angels deliver the quality that the VOC would like to see. Now, we’ve already talked in “timeline of a talk” about what things we’d like to see, but … <points to empty slides> oops, what is that? An empty slide? I actually once had a talk where the speaker had the peculiar style of having white slides when she would speak and there was nothing visual to show. Which now I find quite obvious. You listen to my voice now, at least there is nothing in the screen, if it was in a dark theatre, seeing and hearing me would be the only source of information and you would certainly perceive me well. But as a mixer angel I was conditioned to always go on the slides when a new slide appears so my conditioning to always show the slide immediately was in the way. Suddenly I was the problem. What I’m trying to say here is that how talks get hard to edit well comes unexpectedly, all sorts of things can be odd and often human factor is a thing. Therefore it is impossible to explain in detail what would be good life video edit. Ultimately, learning is a thing that you have to do yourself. So here are a bunch of things that you can do
+% <Benjamin> And then there is the thing with the quality. In the past years the quality of the recordings we produce got better and so developed the expectations. We still have the problems that not all angels deliver the quality that the VOC would like to see. Now, we already spoke about what things we’d like to see, but … <points to empty slides> oops, what is that? A blank slide? <break> I actually once had a talk where the speaker had blank slides when she would speak and there was nothing visual to show. Which from a performance-perspective I find quite obvious. You listen to my voice now, if it was in a dark theatre, seeing and hearing me would be the only source of information, I would have more of your arrention than with a projected image. But as a mixer angel I was fucked, because I was conditioned to always go on the slides when a new slide appears and my conditioning was in the way. Suddenly I was the problem. <break> What I’m trying to say here is that how talks become complicated comes unexpectedly, sometimes the speaker is the problem, sometimes the equipment is the problem, and sometimes you are the problem. All of us. We cannot cover all complicated cases in the Engelschulung but we have to encourage you to be the best camera- stream-observer- and mixer angel that you can be. So here are a few things that you can do.
 
 
-\section{Quality} 
 \begin{frame}{Quality}
-\begin{itemize}[<+->]
-\item  hands-on training with Frederik and Allan % go to the xyz and practice with Frederick  
-\item  get feedback from peers % feedback with peers do it with a friend, one is doing the editing and the other the stream observing and afterwards you talk how it went
-\item  get feedback from Capo % [macht Capo selber]
+\begin{itemize} %[<+->]
+\item  hands-on training with Frederik and Allan % go to the hads-on training with Frederik 
+\item do stream-observer shifts % do stream-observer shifts, especially if you ar a beginner
+\item  get feedback from peers % feedback with peers, do it with a friend, one is doing the editing and the other the stream observing and afterwards you talk how it went
+\item  get feedback from Capo % <macht Capo selber>
 \item  watch your own edits (post event) % watch your own edits after the event, at least a bit, so you have an idea how you performed
 \item  do it more than once a year, check c3voc.de/wiki % do it more than once a year! You can check out in the VOC-Wiki where other events ate where the VOC is doing video, if you do it more often you won't forget it until next congress
-\item  have a habit of continuous improvement % have a habit of continuous improvement. if you think you know how it works, you are probably part of the problem. please, everybody should strive to get better, there is always something to improve.
+\item  have a habit of continuous improvement % this is for everybody, having a habit of continuous improvement. if you think you know how video editing works, you are probably part of the problem. please, everybody should strive to get better, there is always something to improve. During the shift-distribution meeting I'd actually like to ask some people "what was the last thing you've learnt that you'll make better next time", and you better have an answer.
 \end{itemize} 
 \end{frame}
 
@@ -171,9 +176,9 @@
 \subsection{Contacts}
 \begin{frame}{Contacts}
 \begin{itemize}
-\item  Problem 1 -> person A
-\item  Problem 2 -> person B
-\item  please have a DECT number in the Engelsystem
+\item  Problem 1 - person A
+\item  Problem 2 - person B
+\item  please have your DECT number in the Engelsystem
 \end{itemize} 
 \end{frame}
 
